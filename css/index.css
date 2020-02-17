@@ -1,3 +1,350 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	max-width:100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 3px 6%;
+	
+}
+nav div{
+	display: flex;
+	justify-content: space-evenly;
+}
+nav div a{
+	text-align:center;
+	padding: 40px 30px;
+	text-decoration: none;
+	color:grey;
+}
+nav div a:hover{
+	
+	animation-name: Navi;
+	animation-duration: 3s;
+}
+
+@keyframes Navi{
+	from{	}
+	to{
+		background-color: black;
+		color: white;
+	}
+}
+
+header{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2px 8%;
+}
+
+.TopTitle{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	font-size: 80px;
+	
+}
+.TopTitle a{
+	border: solid 1px black;
+	color: black;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+	padding: 5px 5px;
+}
+.TopTitle a:hover{
+	animation-name: GetStart;
+	animation-duration: 1s;
+}
+@keyframes GetStart{
+	from{
+		border: solid 1px black;
+	}
+	to{
+		border: solid 5px blue;
+		
+	}
+}
+
+.TopImg{
+	display: flex;
+	padding: 10px 0px;
+}
+
+section div{
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0px;
+}
+
+.TopSect{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 1px 6%;
+	border-top: solid 1px black;
+}
+.TopSect div{
+	display: flex;
+	padding: 10px 3%;
+	width: 49%;
+}
+
+footer{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+.middle-img{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin: 0 auto;
+}
+.BottomSect{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 1px 6%;
+	border-bottom: solid 1px black;
+}
+.BottomSect div{
+	display: flex;
+	padding: 10px 1%;
+	width: 33%;
+}
+address{
+	display: flex;
+	flex-direction: column;
+	margin:0 6%;
+	padding-top: 20px;
+}
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*Start of individual code for Services.html*/
+.services-header-img{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin: 0 auto;
+}
+.ServSect{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 2% 6%;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+}
+.ServSect div{
+	display: flex;
+	flex-direction: column;
+	border: solid 1px black;
+	margin: 2%;
+	width:46%;
+	padding: 3%;
+	background-color: #e6e6e6;
+}
+.ServSect div button{
+	margin: 10px 2px;
+	background-color: white;
+	
+	width: 35%;
+	padding: 10px;
+	border: solid 1px black;
+	border-radius: 8px;
+	color: black;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ServSect div button:hover{
+	animation-name: GetStart;
+	animation-duration: 2s;
+}
+@keyframes GetStart{
+	from{
+		border: solid 1px black;
+	}
+	to{
+		box-shadow: 0px 0px 20px  blue;
+
+		
+	}
+}
+.SomeFacts{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 8%;
+}
+.SomeFacts div{
+	padding-right: 5%;
+}
+.SomeFacts ul{
+	padding:5%;
+
+}
+/*Tablet View*/
+@media (max-width:800px){
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        margin-top: 2%;
+    }
+    .TopImg{
+        display: none;
+    }
+    header{
+        margin-bottom: 8%;
+    }
+    .middle-img{
+        max-width: 720px;
+    }
+    footer{
+        margin: 4%;
+    }
+    .TopSect{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1px 1%;
+    }
+    .BottomSect{
+        display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 1px 3%;
+    }
+    address{
+        margin: 0 4%;
+    }
+
+}
 
 
+/*Mobile View*/
+@media(max-width:500px){
+    nav div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-top: solid 1px black;
+        width:480px;
+        margin: 3% 0;
+        padding: 0;
+    }
+
+    nav div a{
+        border-bottom: solid 1px black;
+        margin: 2px 0;
+        padding: 5% 0px;
+        width:100%;
+    }
+
+    header{
+        margin: 10%;
+    }
+
+    .TopTitle a{
+        margin: 3% auto;
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        width: 180px; 
+    }
+    .TopSect{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .TopSect div{
+        width: 480px;
+    }
+    .middle-img{
+        width: 93%;
+    }
+    .BottomSect{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .BottomSect div{
+        width: 470px;
+    }
+    address p{
+        padding: 1% 0;
+    }
+
+}
